@@ -54,7 +54,7 @@ class TestDataManager(unittest.TestCase):
         # test proper pointer adjustment and pop/add 
         # functionality-full buffer
         mnger.add_data(10285, 2.5)
-        self.assertEqual(mnger.__pointer, 0)
+        self.assertEqual(mnger._DataManager__pointer, 0)
         t, v = mnger.pop()
         self.assertEqual(t, 10285)
         self.assertEqual(v, 2.5)
